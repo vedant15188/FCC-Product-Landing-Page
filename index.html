@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>FCC Product Landing Page</title>
+
+    <style>
+        @media (max-width: 576px) {
+            body {
+                background: #404040;
+            }
+        }
+        #about {
+            display: flex;
+        }
+    </style>
+
+</head>
+<body>
+
+<header id="header">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand nav-link" href="#subscribe">
+            <img id="header-img" style="width: 30px; height: auto;" alt="Bootstrap Logo" src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg"> Bootstrap
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe to Updates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container container-fluid" style="text-align: center; background: #f2f2f2;">
+    <iframe id="video" width="700" height="393" src="https://www.youtube.com/embed/F1B9Fk_SgI0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="row" style="display: block; text-align: center; margin-top: 5%;">
+        <h3 style="margin-bottom: 1.5%;"><a id="subscribe"></a> Subscribe to our daily updates on our themes</h3>
+        <form id="form" type="post" action="https://www.freecodecamp.com/email-submit">
+            <div class="form-group">
+                <input id="email" name="email" type="email" class="form-control offset-3 col-6" placeholder="Enter your email..." required aria-describedby="email-help">
+                <small id="email-help" class="form-text text-muted">We're not gonna share your email with someone else. Pinky promise!</small>
+            </div>
+            <input id="submit" class="btn btn-primary col-1" type="submit">
+        </form>
+    </div>
+
+    <div class="row" style="display: block; padding-bottom: 2%; margin-top: 3%;">
+        <div id="about" class="offset-1 col-10 text-left">
+            <p class="lead">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p><br>
+            <p class="lead">
+                Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build
+                your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+            </p>
+        </div>
+    </div>
+
+</main>
+
+<script src="bootstrap/bundle.js"></script>
+<script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
